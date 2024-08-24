@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { DeleteButton } from './DeleteButton'
+import '../styles/TaskBox.css'
 
 
 export default function TaskBox({tasks, setTasks, task}) {
@@ -7,7 +8,7 @@ export default function TaskBox({tasks, setTasks, task}) {
     <>
         <div id={task} className="taskbox">
             <input type="checkbox"></input>
-            {task}
+            <a>{task}</a>
             <DeleteButton className="taskBoxDeleteButton" deleteAction={()=>{
               setTasks(tasks.filter(t => t !== task))
               }}/>

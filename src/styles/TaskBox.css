@@ -1,0 +1,12 @@
+.taskbox{
+    font-size: x-large;
+    display: flex;
+
+}
+
+a{
+    color: var(--primary-color);
+}
+
+.taskBoxDeleteButton{
+}

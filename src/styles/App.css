@@ -5,12 +5,14 @@ body{
 
 }
 .app{
-  width: 80vw;
+  width: 50vw;
   height: 100vh;
 }
 
 .board{
   background-color: var(--lighter-background-color);;
-  height: 90%;
+  height: 85%;
+  border-radius: 30px;
+  padding: 2%;
 }
 
