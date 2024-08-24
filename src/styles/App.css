@@ -2,9 +2,10 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .app{
-  width: 80vh;
+  width: 80vw;
   height: 100vh;
 }
 
@@ -12,3 +13,4 @@ body{
   background-color: var(--lighter-background-color);;
   height: 90%;
 }
+

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { DeleteButton } from './DeleteButton'
-import '../styles/Tasks.css'
 
 
 export default function TaskBox({tasks, setTasks, task}) {

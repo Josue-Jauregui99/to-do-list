@@ -1,0 +1,16 @@
+.taskInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.taskInput input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+}
