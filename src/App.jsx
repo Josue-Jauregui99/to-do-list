@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './styles/App.css'
 import TaskInput from './components/TaskInput'
 import TaskBox from './components/TaskBox'
-import YZRYBanner from './components/YZRYBanner.jsx'
+import YZRYBanner from './components/YZRYBanner'
 
 export default function App() {
   const [tasks, setTasks] = useState(() => {
@@ -20,10 +20,10 @@ export default function App() {
 
   return (
     <>
-      <div className='Banner'>
-      </div>
+      <YZRYBanner />
       <div className="app">
-        <TaskInput tasks={tasks} setTasks={setTasks} />
+        <h1>To-Do List</h1>
+        <TaskInput className="mainInput" tasks={tasks} setTasks={setTasks} />
         <div className="board">
           {
             tasks.map((task) => (

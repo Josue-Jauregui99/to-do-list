@@ -1,18 +1,32 @@
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+    margin: 0px;
+    padding: 0px;
+  }
 
+.yzry-banner{
+    position: sticky;
+    top: 0px;
 }
+
 .app{
-  width: 50vw;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45vw;
+    margin: 30px auto;
 }
 
+.app h1{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0%;
+}
 .board{
-  background-color: var(--lighter-background-color);;
-  height: 85%;
-  border-radius: 30px;
-  padding: 2%;
+    background-color: var(--lighter-background-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    height: 65vh;
+    padding: 20px;
 }
-

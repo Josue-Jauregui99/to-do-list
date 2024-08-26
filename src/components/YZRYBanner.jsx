@@ -1,9 +1,10 @@
-import { YZRYLogo } from './YZRYLogo'
+import logo from '../assets/images/logo-no-background.svg'
+import '../styles/YZRYBanner.css'
 
 export default function YZRYBanner() {
     return (
       <div className="yzry-banner">
-        <YZRYLogo width="1rem" height="1rem" />
+        <img className='logo' src={logo} alt="logo" />
       </div>
     )
 }

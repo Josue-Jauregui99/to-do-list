@@ -1,0 +1,13 @@
+.yzry-banner{
+    background-color: var(--lighter-background-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
