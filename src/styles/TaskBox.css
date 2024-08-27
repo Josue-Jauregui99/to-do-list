@@ -1,12 +1,10 @@
 .taskbox{
     font-size: x-large;
     display: flex;
+    align-items: center;
 
 }
 
 a{
     color: var(--primary-color);
-}
-
-.taskBoxDeleteButton{
 }

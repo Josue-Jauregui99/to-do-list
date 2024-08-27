@@ -16,14 +16,14 @@ export default function TaskInput({ tasks, setTasks }) {
                     onChange={e => setNewTask(e.target.value)}
                     onKeyDown={(e) => {
                         if (e.key === 'Enter') {
-                            setTasks([...tasks, newTask])
+                            setTasks([...tasks, [newTask, false]])
                             setNewTask('')
                         }
                     }}
                     placeholder="Enter a new task"
                 />
                 <button className = "submitButton" onClick={() => {
-                    setTasks([...tasks, newTask])
+                    setTasks([...tasks, [newTask, false]])
                     setNewTask('')
                 }}>
                     Add Task
