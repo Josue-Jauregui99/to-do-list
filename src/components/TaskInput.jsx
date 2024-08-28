@@ -9,9 +9,13 @@ export default function TaskInput({ tasks, setTasks }) {
     let taskList = tasks.map(task => task[0])
 
     const submitAction = () => {
-        setTasks([...tasks, [newTask, false]])
-        setNewTask('')
-    }
+        if (taskList.includes(newTask)) {
+            alert("Task already exists!")
+        } else {
+            setTasks([...tasks, [newTask, false]])
+            setNewTask('')
+        }
+    }   
 
     return (
         <>
@@ -21,20 +25,12 @@ export default function TaskInput({ tasks, setTasks }) {
                     type="text"
                     value={newTask}
                     onChange={e => setNewTask(e.target.value)}
-                    onKeyDown={(e) => {
-                        if (taskList.includes(newTask)) {
-                            alert("Task already exists!")
-                        }
-                        else if (e.key === 'Enter') {submitAction()}
+                    onKeyDown={(e) => {if (e.key === 'Enter') {submitAction()}
                     }}
                     placeholder="Enter a new task"
                 />
-                <button className = "submitButton" onClick={() => {
-                    if (taskList.includes(newTask)) {
-                        alert("Task already exists!")
-                    }
-                    else{submitAction()}
-                }}>
+                <button className = "submitButton" onClick={() => {submitAction()}}
+                >
                     Add Task
                 </button>
             </div>
