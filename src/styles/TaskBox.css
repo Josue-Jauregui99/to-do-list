@@ -4,7 +4,14 @@
     align-items: center;
 
 }
+.taskbox:active{
+    background-color: var(--accent-color);
+}
 
 a{
     color: var(--primary-color);
+}
+
+.taskBoxDeleteButton{
+    pointer-events: auto;
 }

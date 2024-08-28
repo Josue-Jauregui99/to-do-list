@@ -27,7 +27,6 @@ export default function App() {
         <div className="board">
           {
             tasks.map((task) => (
-              console.log(task),
               <TaskBox tasks={tasks} setTasks={setTasks} task={task} />
             ))
           }

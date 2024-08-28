@@ -21,8 +21,10 @@ export default function TaskBox({tasks, setTasks, task}) {
             onChange={handleCheck}>{}</input>
             <a style={{textDecoration: checked?"line-through":"none"}}>{task}</a>
             <DeleteButton className="taskBoxDeleteButton" deleteAction={()=>{
+                setTimeout(() => {
               setTasks(tasks.filter(t => t !== task))
-              }}/>
+            },100);
+            }}/>
         </div>
     </>
     )
